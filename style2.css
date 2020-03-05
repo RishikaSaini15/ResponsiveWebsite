@@ -1,0 +1,107 @@
+header {
+  font-family: Georgia;
+  font-size: 16px;
+  color: White;
+  text-shadow: 4px 4px 4px black;
+  text-align: center;
+}
+
+#header-background {
+  width: 100%;
+  height: 10%;
+  background-image: url(./image.jpg);
+  padding: 1%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 0.9em;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.flex-container>div {
+  text-align: left;
+  outline-style: double;
+  width: 50%;
+  margin: 5px;
+  background-color: #F0F0F0;
+  overflow: scroll;
+  padding: 2%;
+  margin: 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #DCDCDC;
+}
+
+.navbar>a {
+  padding: 1%;
+  margin: 0.5%;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .course-detail-container, .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .umd-image, .prof-image {
+    width: 20%;
+  }
+
+  .navbar>a {
+    font-size: 15px;
+  }
+
+  .footer {
+    position: relative;
+    padding: 1%;
+  }
+}
+
+.umd-image, .prof-image {
+  float: left;
+  padding: 2%;
+}
+
+ .course-detail-container, .contact-container{
+  padding: 1%;
+}
+
+.footer {
+  height: 5%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2px;
+  background-color: #DCDCDC;
+  color: black;
+  text-align: center;
+  bottom: 0;
+}
